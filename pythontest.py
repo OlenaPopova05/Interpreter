@@ -25,6 +25,14 @@ def test_echo():
         {
             'input': '(3 * (8 + 2)) / 5\n',
             'expected': '> > 6.000000',
+        },
+        {
+            'input': 'min(80, max (abs(pow(-3, 3)), 10))\n',
+            'expected': '> > 27.000000',
+        },
+        {
+            'input': 'min(13 + 44, pow(2, 3 *2))\n',
+            'expected': '> > 57.000000',
         }]
 
     for test in tests:
